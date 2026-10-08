@@ -377,8 +377,8 @@
       "title": "Full Stack Developer (Freelance)",
       "years": "09/2025 - Present",
       "mainTech": [
-        "Laravel",
-        "React",
+        "Next.js",
+        "Express.js",
         "HRIS Integration"
       ],
       "technologies": [
@@ -392,6 +392,7 @@
       "years": "09/2024 - Present",
       "mainTech": [
         "Next.js",
+        "Express.js",
         "Laravel",
         "TypeScript"
       ],
@@ -410,8 +411,12 @@
       "years": "08/2024 - 10/2026",
       "mainTech": [
         "Next.js",
+        "Express.js",
         "Node.js",
+        "Laravel",
         "Kafka",
+        "Redis",
+        "Microservices",
         "IoT"
       ],
       "technologies": [
@@ -429,7 +434,7 @@
       "years": "03/2024 - 05/2024",
       "mainTech": [
         "Vue.js",
-        "Node.js",
+        "Laravel",
         "Microservices"
       ],
       "technologies": [

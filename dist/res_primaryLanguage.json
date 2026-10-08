@@ -41,6 +41,36 @@
       ]
     },
     {
+      "title": "Reeval",
+      "description": "Manufacturing ERP platform built to unify procurement, inventory, production, sales, and operational workflows into a centralized system. Architected as an event-driven microservices platform with Apache Kafka to support scalable and decoupled business processes.",
+      "images": [
+        "images/portfolio/reeval/p1.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-nextjs-original",
+          "name": "Next.js"
+        },
+        {
+          "class": "devicon-go-plain",
+          "name": "Golang"
+        },
+        {
+          "class": "devicon-redis-plain",
+          "name": "Redis"
+        },
+        {
+          "class": "devicon-postgresql-plain",
+          "name": "PostgreSQL"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker"
+        }
+      ]
+    },
+    {
       "title": "MyNethome",
       "description": "Self-service ISP customer portal and multi-engine middleware platform (rebranded from NOVA). Enables broadband subscribers to manage active packages, process digital payments, monitor real-time bandwidth consumption, and run network speed diagnostics. Led architectural migration into a multi-engine middleware layer, decoupling the portal from a legacy single billing engine to interface seamlessly with multiple upstream billing providers.",
       "images": [
@@ -122,14 +152,37 @@
         }
       ]
     },
-   
-   
-   
     {
       "title": "Emonev LPPSLH",
       "description": "Electronic Monitoring and Evaluation (E-Monev) platform for LPPSLH. Tracks program milestones, field resource allocation, indicator targets, and community development impact across multiple regions with structured analytical reporting.",
       "images": [
         "images/portfolio/emonev-lppslh/p1.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-nextjs-original",
+          "name": "Next.js"
+        },
+        {
+          "class": "devicon-express-original",
+          "name": "Express.js"
+        },
+        {
+          "class": "devicon-postgresql-plain",
+          "name": "PostgreSQL"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker"
+        }
+      ]
+    },
+    {
+      "title": "Company Profile LPPSLH",
+      "description": "Official institutional portal for LPPSLH (Lembaga Penelitian dan Pemberdayaan Sumberdaya Lingkungan Hidup). Built with modern responsive UI and accessible layout to showcase environmental research programs, community empowerment initiatives, advocacy activities, and institutional publications.",
+      "images": [
+        "images/portfolio/compro-lppslh/p1.jpg"
       ],
       "url": "",
       "technologies": [
@@ -173,32 +226,7 @@
         }
       ]
     },
-    {
-      "title": "Company Profile LPPSLH",
-      "description": "Official institutional portal for LPPSLH (Lembaga Penelitian dan Pemberdayaan Sumberdaya Lingkungan Hidup). Built with modern responsive UI and accessible layout to showcase environmental research programs, community empowerment initiatives, advocacy activities, and institutional publications.",
-      "images": [
-        "images/portfolio/compro-lppslh/p1.jpg"
-      ],
-      "url": "",
-      "technologies": [
-        {
-          "class": "devicon-nextjs-original",
-          "name": "Next.js"
-        },
-        {
-          "class": "devicon-express-original",
-          "name": "Express.js"
-        },
-        {
-          "class": "devicon-postgresql-plain",
-          "name": "PostgreSQL"
-        },
-        {
-          "class": "devicon-docker-plain",
-          "name": "Docker"
-        }
-      ]
-    },
+   
     {
       "title": "Smart Grid Meter",
       "description": "Enterprise-grade Smart Grid and AdTech system for PT. PLN. Architected full-stack infrastructure to monitor real-time electrical power distribution, detect grid shrinkage, and flag hardware tampering. Designed a KYC-driven ad management engine delivering targeted campaigns that reward citizens with subsidized electricity units, bridging energy distribution with digital ad revenue.",
@@ -304,24 +332,6 @@
       ]
     },
     {
-      "title": "ERP Pantes",
-      "description": "Custom retail ERP platform for Toko Mas Pantes & Vivian Diamond. Features comprehensive Sales and Purchasing modules, dynamic invoice and receipt templates, customer follow-up tracking workflows, and detailed raw material/jewelry inventory accounting.",
-      "images": [
-        "images/portfolio/erp-pantes/p1.jpg"
-      ],
-      "url": "",
-      "technologies": [
-        {
-          "class": "devicon-nextjs-original",
-          "name": "Next.js"
-        },
-        {
-          "class": "devicon-typescript-plain",
-          "name": "TypeScript"
-        }
-      ]
-    },
-    {
       "title": "SPK (Work Order) Bacip Moto",
       "description": "Digital Work Order (Surat Perintah Kerja / SPK) management platform built for Bacip Moto. Enables automotive service admins to configure custom service stages, assign tasks to technicians, and allows mechanics to log real-time progress updates and upload photographic proof-of-work.",
       "images": [
@@ -338,7 +348,26 @@
           "name": "TypeScript"
         }
       ]
+    },
+    {
+      "title": "ERP Pantes",
+      "description": "Custom retail ERP platform for Toko Mas Pantes & Vivian Diamond. Features comprehensive Sales and Purchasing modules, dynamic invoice and receipt templates, customer follow-up tracking workflows, and detailed raw material/jewelry inventory accounting.",
+      "images": [
+        "images/portfolio/erp-pantes/p1.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-nextjs-original",
+          "name": "Next.js"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        }
+      ]
     }
+    
   
     
   ],
@@ -348,8 +377,8 @@
       "title": "Full Stack Developer (Freelance)",
       "years": "09/2025 - Present",
       "mainTech": [
-        "Laravel",
-        "React",
+        "Next.js",
+        "Express.js",
         "HRIS Integration"
       ],
       "technologies": [
@@ -363,6 +392,7 @@
       "years": "09/2024 - Present",
       "mainTech": [
         "Next.js",
+        "Express.js",
         "Laravel",
         "TypeScript"
       ],
@@ -381,8 +411,12 @@
       "years": "08/2024 - 10/2026",
       "mainTech": [
         "Next.js",
+        "Express.js",
         "Node.js",
+        "Laravel",
         "Kafka",
+        "Redis",
+        "Microservices",
         "IoT"
       ],
       "technologies": [
@@ -400,7 +434,7 @@
       "years": "03/2024 - 05/2024",
       "mainTech": [
         "Vue.js",
-        "Node.js",
+        "Laravel",
         "Microservices"
       ],
       "technologies": [
