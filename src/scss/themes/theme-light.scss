@@ -1,0 +1,281 @@
+// Warm Light Theme Variables & Styles (Warm Linen, Cream Paper, Sand & Royal Blue)
+body[data-theme="light"] {
+  background-color: #fcfaf6;
+  color: #1c1917;
+
+  .top-navbar {
+    background: rgba(252, 250, 246, 0.92);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(230, 224, 214, 0.85);
+
+    &.navbar-scrolled {
+      background: rgba(252, 250, 246, 0.98);
+      border-bottom-color: #dfd7c8;
+      box-shadow: 0 4px 16px rgba(45, 35, 20, 0.05);
+    }
+
+    .navbar-brand-logo {
+      color: #1c1917;
+    }
+
+    .nav-link-item {
+      color: #575147;
+
+      &:hover {
+        color: #2563eb;
+      }
+    }
+  }
+
+  header.hero-section {
+    background: radial-gradient(circle at 50% 25%, rgba(37, 99, 235, 0.06) 0%, transparent 65%), #fcfaf6;
+    border-bottom: 1px solid #eee8dc;
+
+    .hero-name-title {
+      color: #1c1917;
+    }
+
+    .hero-typewriter-container {
+      color: #423c34;
+    }
+
+    .hero-typewriter-text {
+      color: #2563eb;
+    }
+
+    .btn-explore-more {
+      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+      color: #ffffff;
+      border: 1px solid #1d4ed8;
+      box-shadow: 0 10px 24px -3px rgba(37, 99, 235, 0.35), 0 4px 10px -2px rgba(37, 99, 235, 0.2);
+
+      .scroll-indicator-arrow {
+        background: rgba(255, 255, 255, 0.22);
+        color: #ffffff;
+      }
+
+      &:hover {
+        background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+        border-color: #1e40af;
+        color: #ffffff;
+        box-shadow: 0 14px 28px -3px rgba(37, 99, 235, 0.45);
+
+        .scroll-indicator-arrow {
+          background: rgba(255, 255, 255, 0.32);
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  #about {
+    background: #ffffff;
+
+    .section-title-clean {
+      color: #1c1917;
+    }
+
+    .profile-card {
+      background: #fbf9f5;
+      border: 1px solid #eae3d5;
+      box-shadow: 0 4px 14px rgba(45, 35, 20, 0.03);
+
+      .profile-name {
+        color: #1c1917;
+      }
+
+      .profile-role {
+        color: #2563eb;
+      }
+
+      .profile-location {
+        color: #635c50;
+      }
+
+      .social-btn {
+        background: #f0ebe0;
+        color: #2563eb;
+
+        &:hover {
+          background: #2563eb;
+          color: #ffffff !important;
+        }
+      }
+    }
+
+    .about-content-card {
+      background: #fbf9f5;
+      border: 1px solid #eae3d5;
+      box-shadow: 0 4px 14px rgba(45, 35, 20, 0.03);
+      color: #3b362e;
+
+      .about-card-header {
+        background: #f4efe4;
+        border-bottom: 1px solid #eae3d5;
+
+        .about-header-tag {
+          color: #1c1917;
+        }
+      }
+
+      .highlight-item {
+        background: #ffffff;
+        border: 1px solid #eae3d5;
+
+        .highlight-label {
+          color: #1c1917;
+        }
+
+        .highlight-desc {
+          color: #635c50;
+        }
+      }
+    }
+  }
+
+  #portfolio {
+    background: #f6f2e9;
+    border-top: 1px solid #eae2d4;
+    border-bottom: 1px solid #eae2d4;
+
+    .section-title-clean {
+      color: #1c1917;
+    }
+
+    .project-card {
+      background: #ffffff;
+      border: 1px solid #eae3d5;
+      box-shadow: 0 3px 12px rgba(45, 35, 20, 0.04);
+
+      &:hover {
+        border-color: #2563eb;
+        transform: translateY(-4px);
+        box-shadow: 0 14px 28px -4px rgba(37, 99, 235, 0.15);
+      }
+
+      .project-card-title {
+        color: #1c1917;
+      }
+
+      .project-card-snippet {
+        color: #524c42;
+      }
+
+      .tech-pill {
+        background: #eff6ff;
+        border: 1px solid #dbeafe;
+        color: #1d4ed8;
+      }
+    }
+  }
+
+  #skills {
+    background: #ffffff;
+    border-top: 1px solid #eae2d4;
+
+    .section-title-clean {
+      color: #1c1917;
+    }
+
+    .skill-card {
+      background: #fbf9f5;
+      border: 1px solid #eae3d5;
+      color: #2e2a24;
+      box-shadow: 0 2px 8px rgba(45, 35, 20, 0.02);
+
+      &:hover {
+        border-color: #2563eb;
+        background: #2563eb;
+        color: #ffffff;
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  #resume {
+    background: #f6f2e9;
+    border-top: 1px solid #eae2d4;
+
+    .section-title-clean {
+      color: #1c1917;
+    }
+
+    .vertical-timeline::before {
+      background: #ded7c9;
+    }
+
+    .vertical-timeline-element-content {
+      background: #ffffff !important;
+      border: 1px solid #eae3d5;
+      color: #1c1917 !important;
+      box-shadow: 0 4px 14px rgba(45, 35, 20, 0.04);
+
+      &::before {
+        border-right-color: #ffffff !important;
+      }
+
+      .vertical-timeline-element-title {
+        color: #1c1917 !important;
+      }
+
+      .vertical-timeline-element-subtitle {
+        color: #2563eb !important;
+      }
+
+      .vertical-timeline-element-date {
+        color: #635c50 !important;
+      }
+
+      .experience-bullet-item {
+        color: #3b362e;
+      }
+    }
+  }
+
+  .footer-section {
+    background: #1c1917;
+    border-top: 1px solid #2e2a25;
+    color: #9c9486;
+
+    .footer-social-link {
+      color: #d1c8b8;
+
+      &:hover {
+        color: #60a5fa;
+      }
+    }
+  }
+
+  .modal-inside .modal-content {
+    background: #ffffff;
+    color: #1c1917;
+    border: 1px solid #eae3d5;
+
+    .modal-header-custom {
+      border-bottom: 1px solid #eae3d5;
+
+      .modal-title {
+        color: #1c1917;
+      }
+
+      .modal-close-btn {
+        color: #635c50;
+
+        &:hover {
+          color: #1c1917;
+        }
+      }
+    }
+
+    .modal-description {
+      color: #3b362e;
+    }
+
+    .tech-badge {
+      background: #eff6ff;
+      border: 1px solid #dbeafe;
+      color: #1d4ed8;
+    }
+  }
+}

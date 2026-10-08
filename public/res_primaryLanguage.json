@@ -1,0 +1,456 @@
+{
+  "basic_info": {
+    "description_header": "Systems Architecture & Engineering",
+    "description": "Full Stack Developer with 3+ years of hands-on experience architecting scalable web applications and real-time IoT-integrated systems across diverse sectors—including smart property, utility fintech, defense telematics, government digitalization, and enterprise SaaS. Graduated with a 3.91 GPA and awarded 1st Place Best Thesis from Institut Digital Ekonomi LPKIA Bandung for research on monolithic-to-microservice refactoring with Domain-Driven Design and load testing. Deeply proficient in TypeScript/JavaScript (Next.js, React, Node.js, Express) and PHP (Laravel), with production experience designing event-driven microservices with Apache Kafka, high-throughput REST APIs, CI/CD pipelines, and real-time IoT hardware telemetry.",
+    "section_name": {
+      "about": "About Me",
+      "projects": "Featured Projects",
+      "skills": "Technical Skills",
+      "experience": "Work Experience"
+    }
+  },
+  "projects": [
+    {
+      "title": "NEXA",
+      "description": "Unified IoT property management platform connecting resident data management, billing, incident reporting, and smart hardware (smart water meters, electric meters, gate access control, and omni canal sensors monitoring pH, water level, and PPM). Drove the event-driven microservices architecture using Apache Kafka and served as sole owner of backend development. Showcased at the INTI Jiexpo Exhibition in August 2026.",
+      "images": [
+        "images/portfolio/nexa/p1.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-nextjs-original",
+          "name": "Next.js"
+        },
+        {
+          "class": "devicon-express-original",
+          "name": "Express.js"
+        },
+        {
+          "class": "devicon-apachekafka-original",
+          "name": "Apache Kafka"
+        },
+        {
+          "class": "devicon-postgresql-plain",
+          "name": "PostgreSQL"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker"
+        }
+      ]
+    },
+    {
+      "title": "Reeval",
+      "description": "Manufacturing ERP platform built to unify procurement, inventory, production, sales, and operational workflows into a centralized system. Architected as an event-driven microservices platform with Apache Kafka to support scalable and decoupled business processes.",
+      "images": [
+        "images/portfolio/reeval/p1.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-nextjs-original",
+          "name": "Next.js"
+        },
+        {
+          "class": "devicon-go-plain",
+          "name": "Golang"
+        },
+        {
+          "class": "devicon-redis-plain",
+          "name": "Redis"
+        },
+        {
+          "class": "devicon-postgresql-plain",
+          "name": "PostgreSQL"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker"
+        }
+      ]
+    },
+    {
+      "title": "MyNethome",
+      "description": "Self-service ISP customer portal and multi-engine middleware platform (rebranded from NOVA). Enables broadband subscribers to manage active packages, process digital payments, monitor real-time bandwidth consumption, and run network speed diagnostics. Led architectural migration into a multi-engine middleware layer, decoupling the portal from a legacy single billing engine to interface seamlessly with multiple upstream billing providers.",
+      "images": [
+        "images/portfolio/mynethome/p1.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-nextjs-original",
+          "name": "Next.js"
+        },
+        {
+          "class": "devicon-express-original",
+          "name": "Express.js"
+        },
+        {
+          "class": "devicon-mysql-plain",
+          "name": "MySQL"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker"
+        }
+      ]
+    },
+    {
+      "title": "Omni Sensor",
+      "description": "Detect anomalies in water level (CM), acidity (pH), and purity (PPM) with high precision. Prevent potential floods and pollution before they happen.",
+      "images": [
+        "images/portfolio/omni/p1.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-nodejs-plain",
+          "name": "Node.js"
+        },
+        {
+          "class": "devicon-express-original",
+          "name": "Express.js"
+        },
+        {
+          "class": "devicon-redis-plain",
+          "name": "Redis"
+        },
+        {
+          "class": "devicon-postgresql-plain",
+          "name": "PostgreSQL"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker"
+        }
+      ]
+    },
+    {
+      "title": "Satkomlek Viewer",
+      "description": "Real-time IoT dashcam telematics and fleet monitoring system for SATKOMLEK TNI. Features low-latency live video streaming and real-time GPS tracking by integrating Blackvue IoT hardware with Node.js and Laravel backend services, delivered within a demanding 2-month mission deadline.",
+      "images": [
+        "images/portfolio/satkomlek-viewer/p1.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-nodejs-plain",
+          "name": "Node.js"
+        },
+        {
+          "class": "devicon-laravel-plain",
+          "name": "Laravel"
+        },
+        {
+          "class": "devicon-mysql-plain",
+          "name": "MySQL"
+        },
+        {
+          "class": "devicon-javascript-plain",
+          "name": "WebSockets"
+        }
+      ]
+    },
+    {
+      "title": "Emonev LPPSLH",
+      "description": "Electronic Monitoring and Evaluation (E-Monev) platform for LPPSLH. Tracks program milestones, field resource allocation, indicator targets, and community development impact across multiple regions with structured analytical reporting.",
+      "images": [
+        "images/portfolio/emonev-lppslh/p1.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-nextjs-original",
+          "name": "Next.js"
+        },
+        {
+          "class": "devicon-express-original",
+          "name": "Express.js"
+        },
+        {
+          "class": "devicon-postgresql-plain",
+          "name": "PostgreSQL"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker"
+        }
+      ]
+    },
+    {
+      "title": "Company Profile LPPSLH",
+      "description": "Official institutional portal for LPPSLH (Lembaga Penelitian dan Pemberdayaan Sumberdaya Lingkungan Hidup). Built with modern responsive UI and accessible layout to showcase environmental research programs, community empowerment initiatives, advocacy activities, and institutional publications.",
+      "images": [
+        "images/portfolio/compro-lppslh/p1.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-nextjs-original",
+          "name": "Next.js"
+        },
+        {
+          "class": "devicon-express-original",
+          "name": "Express.js"
+        },
+        {
+          "class": "devicon-postgresql-plain",
+          "name": "PostgreSQL"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker"
+        }
+      ]
+    },
+    {
+      "title": "Company Profile PT Adimatra",
+      "description": "Full-stack public company profile and administrative content management system (CMS) for Adimatra. Features a fast, SEO-friendly Next.js frontend paired with a robust Laravel backend managing company leadership, project portfolio, career openings, and published articles.",
+      "images": [
+        "images/portfolio/compro-adimatra/p1.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-nextjs-original",
+          "name": "Next.js"
+        },
+        {
+          "class": "devicon-laravel-plain",
+          "name": "Laravel"
+        },
+        {
+          "class": "devicon-mysql-plain",
+          "name": "MySQL"
+        }
+      ]
+    },
+   
+    {
+      "title": "Smart Grid Meter",
+      "description": "Enterprise-grade Smart Grid and AdTech system for PT. PLN. Architected full-stack infrastructure to monitor real-time electrical power distribution, detect grid shrinkage, and flag hardware tampering. Designed a KYC-driven ad management engine delivering targeted campaigns that reward citizens with subsidized electricity units, bridging energy distribution with digital ad revenue.",
+      "images": [
+        "images/portfolio/smartgrid/p1.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-nextjs-original",
+          "name": "Next.js"
+        },
+        {
+          "class": "devicon-express-original",
+          "name": "Express.js"
+        },
+        {
+          "class": "devicon-postgresql-plain",
+          "name": "PostgreSQL"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker"
+        }
+      ]
+    },
+    {
+      "title": "Smart Water Meter",
+      "description": "A practical solution for topping up your water meter token. Enjoy the convenience of topping up anytime, anywhere, with a secure and reliable system.",
+      "images": [
+        "images/portfolio/water/p1.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-nextjs-original",
+          "name": "Next.js"
+        },
+        {
+          "class": "devicon-express-original",
+          "name": "Express.js"
+        },
+        {
+          "class": "devicon-postgresql-plain",
+          "name": "PostgreSQL"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker"
+        }
+      ]
+    },
+    {
+      "title": "GARIS",
+      "description": "Internal enterprise General Affair management ecosystem for PT. Cisangkan. Manages room bookings, meal ordering, vehicle loan operations, and company asset tracking. Owned end-to-end full-stack development, delivering user-centric workflows tightly integrated with core HRIS databases.",
+      "images": [
+        "images/portfolio/garis/p1.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-laravel-plain",
+          "name": "Laravel"
+        },
+        {
+          "class": "devicon-nextjs-original",
+          "name": "Next.js"
+        },
+        {
+          "class": "devicon-mysql-plain",
+          "name": "MySQL"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker"
+        }
+      ]
+    },
+    {
+      "title": "Forta",
+      "description": "IoT-integrated digital smart lock system enabling users to control and monitor physical access to their property securely via smartphone. Handled backend system architecture, cryptographic security protocols, device authentication, and seamless real-time synchronization with smart lock hardware.",
+      "images": [
+        "images/portfolio/forta/p1.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-nodejs-plain",
+          "name": "Node.js"
+        },
+        {
+          "class": "devicon-express-original",
+          "name": "Express.js"
+        },
+        {
+          "class": "devicon-postgresql-plain",
+          "name": "PostgreSQL"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker"
+        }
+      ]
+    },
+    {
+      "title": "SPK (Work Order) Bacip Moto",
+      "description": "Digital Work Order (Surat Perintah Kerja / SPK) management platform built for Bacip Moto. Enables automotive service admins to configure custom service stages, assign tasks to technicians, and allows mechanics to log real-time progress updates and upload photographic proof-of-work.",
+      "images": [
+        "images/portfolio/spk-bacip/p1.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-nextjs-original",
+          "name": "Next.js"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        }
+      ]
+    },
+    {
+      "title": "ERP Pantes",
+      "description": "Custom retail ERP platform for Toko Mas Pantes & Vivian Diamond. Features comprehensive Sales and Purchasing modules, dynamic invoice and receipt templates, customer follow-up tracking workflows, and detailed raw material/jewelry inventory accounting.",
+      "images": [
+        "images/portfolio/erp-pantes/p1.jpg"
+      ],
+      "url": "",
+      "technologies": [
+        {
+          "class": "devicon-nextjs-original",
+          "name": "Next.js"
+        },
+        {
+          "class": "devicon-typescript-plain",
+          "name": "TypeScript"
+        }
+      ]
+    }
+    
+  
+    
+  ],
+  "experience": [
+    {
+      "company": "PT. Cisangkan",
+      "title": "Full Stack Developer (Freelance)",
+      "years": "09/2025 - Present",
+      "mainTech": [
+        "Laravel",
+        "React",
+        "HRIS Integration"
+      ],
+      "technologies": [
+        "Developing and maintaining GARIS, an internal General Affair platform covering room booking, meal ordering, vehicle loans, and company asset tracking.",
+        "Owning end-to-end full-stack development, translating complex enterprise requirements into dependable software with core HRIS connectivity."
+      ]
+    },
+    {
+      "company": "Freelance / Self Employed",
+      "title": "Full Stack Developer",
+      "years": "09/2024 - Present",
+      "mainTech": [
+        "Next.js",
+        "Laravel",
+        "TypeScript"
+      ],
+      "technologies": [
+        "ERP System for Toko Mas Pantes & Vivian Diamond (Sales, Purchasing, Raw Materials).",
+        "Work Order System (SPK) for Bacip Moto with custom technician workflows.",
+        "SEO-friendly Company Profile & Laravel CMS for Adimatra.",
+        "Institutional Profile & E-Monev platform for LPPSLH.",
+        "Secure Online Tuition Payment Portal for Cakra Buana & Yayasan Bintara.",
+        "Internal Warehouse & Cafe Asset Management System."
+      ]
+    },
+    {
+      "company": "PT. Akselerasi Informasi Indonesia",
+      "title": "Full Stack Developer",
+      "years": "08/2024 - 10/2026",
+      "mainTech": [
+        "Next.js",
+        "Node.js",
+        "Kafka",
+        "IoT"
+      ],
+      "technologies": [
+        "Led R&D of NEXA (IoT property management, smart meters, canal monitoring pH/water/PPM) using Kafka-driven microservices. Showcased at INTI Jiexpo 2026.",
+        "Architected Forta, a secure IoT-integrated smartphone smart lock access control system.",
+        "Evolved MyNethome ISP portal into a scalable multi-engine billing middleware layer.",
+        "Built PLN enterprise Smart Grid monitoring & KYC-driven AdTech electricity subsidy system.",
+        "Delivered real-time IoT dashcam streaming & GPS tracking platform for SATKOMLEK TNI within 2 months.",
+        "Architected multi-company ERP with Docker CI/CD and conducted Unisba zero-vulnerability security remediation."
+      ]
+    },
+    {
+      "company": "QUEM Creative Studio",
+      "title": "Full Stack Developer (Intern)",
+      "years": "03/2024 - 05/2024",
+      "mainTech": [
+        "Vue.js",
+        "Node.js",
+        "Microservices"
+      ],
+      "technologies": [
+        "Maintained and scaled microservices for EnimalBiz application.",
+        "Built responsive Vue.js frontend interfaces and RESTful APIs connecting web, mobile, and services."
+      ]
+    },
+    {
+      "company": "PT. Visi Karya Prakarsa / AntriQue",
+      "title": "Product Manager & Frontend Developer",
+      "years": "07/2022 - 12/2023",
+      "mainTech": [
+        "Laravel",
+        "Vue.js",
+        "Agile / Scrum"
+      ],
+      "technologies": [
+        "Led product roadmap, Notion technical documentation, and sprint tracking in Trello as Scrum moderator.",
+        "Built Helpdesk Pospay fullstack application with Laravel.",
+        "Developed AntriQue Ads frontend (Laravel/Vue.js) and custom BRI TV digital display layouts."
+      ]
+    }
+  ]
+}

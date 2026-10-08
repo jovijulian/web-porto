@@ -1,0 +1,118 @@
+{
+  "basic_info": {
+    "name": "Jovi Julian Hendri",
+    "titles": [
+      "Full Stack Developer",
+      "IoT Systems Engineer",
+      "Microservices & Backend Specialist",
+      "Next.js & Laravel Developer"
+    ],
+    "social": [
+      {
+        "name": "github",
+        "url": "https://github.com/jovijulian",
+        "class": "fab fa-github"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://linkedin.com/in/jovijulian2002/",
+        "class": "fab fa-linkedin"
+      },
+      {
+        "name": "email",
+        "url": "mailto:jovijulian2002@gmail.com",
+        "class": "fas fa-envelope"
+      }
+    ],
+    "image": "myProfile.jpg"
+  },
+  "skills": {
+    "icons": [
+      {
+        "name": "Next.js",
+        "class": "devicon-nextjs-original",
+        "level": "90"
+      },
+      {
+        "name": "React",
+        "class": "devicon-react-original",
+        "level": "90"
+      },
+      {
+        "name": "Vue.js",
+        "class": "devicon-vuejs-plain",
+        "level": "85"
+      },
+      {
+        "name": "Laravel",
+        "class": "devicon-laravel-plain",
+        "level": "95"
+      },
+      {
+        "name": "Node.js",
+        "class": "devicon-nodejs-plain",
+        "level": "90"
+      },
+      {
+        "name": "Express.js",
+        "class": "devicon-express-original",
+        "level": "90"
+      },
+      {
+        "name": "Golang",
+        "class": "devicon-go-plain",
+        "level": "80"
+      },
+      {
+        "name": "PHP",
+        "class": "devicon-php-plain",
+        "level": "95"
+      },
+      {
+        "name": "JavaScript",
+        "class": "devicon-javascript-plain",
+        "level": "95"
+      },
+      {
+        "name": "TypeScript",
+        "class": "devicon-typescript-plain",
+        "level": "85"
+      },
+      {
+        "name": "Apache Kafka",
+        "class": "devicon-apachekafka-original",
+        "level": "85"
+      },
+      {
+        "name": "PostgreSQL",
+        "class": "devicon-postgresql-plain",
+        "level": "90"
+      },
+      {
+        "name": "MySQL",
+        "class": "devicon-mysql-plain",
+        "level": "90"
+      },
+      {
+        "name": "Docker",
+        "class": "devicon-docker-plain",
+        "level": "85"
+      },
+      {
+        "name": "Redis",
+        "class": "devicon-redis-plain",
+        "level": "85"
+      },
+      {
+        "name": "Google Cloud",
+        "class": "devicon-googlecloud-plain",
+        "level": "80"
+      },
+      {
+        "name": "Git",
+        "class": "devicon-git-plain",
+        "level": "90"
+      }
+    ]
+  }
+}
