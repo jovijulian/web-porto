@@ -2,7 +2,10 @@ import React, { Component } from "react";
 
 class Skills extends Component {
   renderSkillIcon(skill) {
-    if (skill.name.toLowerCase().includes("next")) {
+    const nameLower = (skill.name || "").toLowerCase();
+    const classLower = (skill.class || "").toLowerCase();
+
+    if (nameLower.includes("next")) {
       return (
         <svg
           className="skill-devicon"
@@ -27,6 +30,27 @@ class Skills extends Component {
         </svg>
       );
     }
+
+    if (nameLower.includes("golang") || nameLower === "go" || classLower.includes("golang") || classLower.includes("go-")) {
+      return <i className="devicon-go-plain skill-devicon" style={{ color: "#00ADD8" }}></i>;
+    }
+
+    if (nameLower.includes("fiber") || classLower.includes("fiber")) {
+      return <i className="devicon-fiber-plain skill-devicon" style={{ color: "#00ADD8" }}></i>;
+    }
+
+    if (nameLower.includes("cicd") || nameLower.includes("ci/cd") || classLower.includes("infinity")) {
+      return <i className="fas fa-infinity skill-devicon" style={{ color: "#2563eb", fontSize: "2rem" }}></i>;
+    }
+
+    if (nameLower.includes("websocket") || classLower.includes("exchange-alt")) {
+      return <i className="fas fa-exchange-alt skill-devicon" style={{ color: "#f59e0b", fontSize: "2rem" }}></i>;
+    }
+
+    if (nameLower.includes("nginx") || classLower.includes("nginx")) {
+      return <i className="devicon-nginx-original skill-devicon" style={{ color: "#009639" }}></i>;
+    }
+
     return <i className={`${skill.class} skill-devicon`}></i>;
   }
 

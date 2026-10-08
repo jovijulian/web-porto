@@ -3,8 +3,10 @@ import { Modal, Carousel } from "react-bootstrap";
 
 class ProjectDetailsModal extends Component {
   renderTechIcon(icon) {
-    const isNext = icon.name.toLowerCase().includes("next");
-    if (isNext) {
+    const nameLower = (icon.name || "").toLowerCase();
+    const classLower = (icon.class || "").toLowerCase();
+
+    if (nameLower.includes("next")) {
       return (
         <svg
           width="18"
@@ -23,6 +25,27 @@ class ProjectDetailsModal extends Component {
         </svg>
       );
     }
+
+    if (nameLower.includes("golang") || nameLower === "go" || classLower.includes("golang") || classLower.includes("go-")) {
+      return <i className="devicon-go-plain" style={{ fontSize: "1.25rem", lineHeight: 1, color: "#00ADD8" }}></i>;
+    }
+
+    if (nameLower.includes("fiber") || classLower.includes("fiber")) {
+      return <i className="devicon-fiber-plain" style={{ fontSize: "1.25rem", lineHeight: 1, color: "#00ADD8" }}></i>;
+    }
+
+    if (nameLower.includes("cicd") || nameLower.includes("ci/cd") || classLower.includes("infinity")) {
+      return <i className="fas fa-infinity" style={{ fontSize: "1.15rem", lineHeight: 1, color: "#2563eb" }}></i>;
+    }
+
+    if (nameLower.includes("websocket") || classLower.includes("exchange-alt")) {
+      return <i className="fas fa-exchange-alt" style={{ fontSize: "1.15rem", lineHeight: 1, color: "#f59e0b" }}></i>;
+    }
+
+    if (nameLower.includes("nginx") || classLower.includes("nginx")) {
+      return <i className="devicon-nginx-original" style={{ fontSize: "1.25rem", lineHeight: 1, color: "#009639" }}></i>;
+    }
+
     return <i className={icon.class} style={{ fontSize: "1.2rem", lineHeight: 1 }}></i>;
   }
 

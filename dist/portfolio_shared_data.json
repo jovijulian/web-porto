@@ -60,7 +60,12 @@
       {
         "name": "Golang",
         "class": "devicon-go-plain",
-        "level": "80"
+        "level": "85"
+      },
+      {
+        "name": "Fiber Golang",
+        "class": "devicon-fiber-plain",
+        "level": "85"
       },
       {
         "name": "PHP",
@@ -83,6 +88,11 @@
         "level": "85"
       },
       {
+        "name": "WebSocket",
+        "class": "fas fa-exchange-alt",
+        "level": "85"
+      },
+      {
         "name": "PostgreSQL",
         "class": "devicon-postgresql-plain",
         "level": "90"
@@ -93,13 +103,23 @@
         "level": "90"
       },
       {
+        "name": "Redis",
+        "class": "devicon-redis-plain",
+        "level": "85"
+      },
+      {
         "name": "Docker",
         "class": "devicon-docker-plain",
         "level": "85"
       },
       {
-        "name": "Redis",
-        "class": "devicon-redis-plain",
+        "name": "NGINX",
+        "class": "devicon-nginx-original",
+        "level": "85"
+      },
+      {
+        "name": "CI/CD",
+        "class": "fas fa-infinity",
         "level": "85"
       },
       {
