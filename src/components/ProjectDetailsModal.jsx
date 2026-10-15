@@ -53,10 +53,11 @@ class ProjectDetailsModal extends Component {
     if (!this.props.data) return null;
 
     const { technologies = [], images = [], title = "", description = "", url = "" } = this.props.data;
+    const githubLink = url || "https://github.com/jovijulian";
 
     const techList = technologies.map((icon, i) => (
       <li className="list-inline-item m-1" key={i}>
-        <div className="tech-badge">
+        <div className="tech-badge cartoon-tech-badge">
           <span className="tech-badge-icon">{this.renderTechIcon(icon)}</span>
           <span className="tech-badge-name">{icon.name}</span>
         </div>
@@ -70,59 +71,80 @@ class ProjectDetailsModal extends Component {
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
-        className="modal-inside"
+        className="modal-inside cartoon-modal-root"
       >
-        <div className="modal-header-custom d-flex justify-content-between align-items-center px-4 pt-3 pb-3">
-          <h4 className="modal-title mb-0">{title}</h4>
-          <button
-            type="button"
-            className="modal-close-btn"
-            onClick={this.props.onHide}
-            aria-label="Close"
-          >
-            <i className="fas fa-times"></i>
-          </button>
-        </div>
+        <div className="cartoon-modal-frame">
+          {/* Top Decorative Capsule Banner */}
+          <div className="cartoon-modal-top-bar d-flex justify-content-end align-items-center">
+            
+            <button
+              type="button"
+              className="modal-close-btn cartoon-close-btn"
+              onClick={this.props.onHide}
+              aria-label="Close"
+            >
+              <i className="fas fa-times"></i>
+            </button>
+          </div>
 
-        <Modal.Body className="px-4 pb-4 pt-3">
-          {images && images.length > 0 && (
-            <div className="modal-image-container mb-4">
-              {images.length > 1 ? (
-                <Carousel interval={null} indicators={true} controls={true}>
-                  {images.map((elem, i) => (
-                    <Carousel.Item key={i}>
-                      <img
-                        className="d-block w-100 modal-preview-img"
-                        src={elem}
-                        alt={`${title} slide ${i + 1}`}
-                      />
-                    </Carousel.Item>
-                  ))}
-                </Carousel>
-              ) : (
-                <img
-                  className="d-block w-100 modal-preview-img"
-                  src={images[0]}
-                  alt={title}
-                />
-              )}
-            </div>
-          )}
-
-          <div className="modal-info">
-           
-
-            <div className="modal-description-wrapper mb-4">
-              <h6 className="section-subheading mb-2">Overview &amp; Architecture</h6>
-              <p className="modal-description">{description}</p>
-            </div>
-
-            <div className="modal-tech-stack">
-              <h6 className="section-subheading mb-2">Technologies &amp; Architecture</h6>
-              <ul className="list-inline mb-0 d-flex flex-wrap align-items-center">{techList}</ul>
+          <div className="modal-header-custom px-4 pt-3 pb-2">
+            <div className="d-flex align-items-center justify-content-between">
+              <div>
+                <span className="cartoon-label-tag mb-1 d-inline-block">Project Details</span>
+                <h3 className="modal-title mb-0">{title}</h3>
+              </div>
+             
             </div>
           </div>
-        </Modal.Body>
+
+          <Modal.Body className="px-4 pb-4 pt-2">
+            {images && images.length > 0 && (
+              <div className="modal-image-container cartoon-preview-box mb-4">
+                {images.length > 1 ? (
+                  <Carousel interval={null} indicators={true} controls={true}>
+                    {images.map((elem, i) => (
+                      <Carousel.Item key={i}>
+                        <img
+                          className="modal-preview-img"
+                          src={elem}
+                          alt={`${title} slide ${i + 1}`}
+                        />
+                      </Carousel.Item>
+                    ))}
+                  </Carousel>
+                ) : (
+                  <img
+                    className="modal-preview-img"
+                    src={images[0]}
+                    alt={title}
+                  />
+                )}
+              </div>
+            )}
+
+           
+
+            <div className="modal-info">
+              <div className="modal-description-wrapper cartoon-card-sub mb-4">
+                <div className="d-flex align-items-center gap-2 mb-2">
+                  <span className="cartoon-sub-badge">
+                    <i className="fas fa-info-circle me-1"></i> Overview &amp; Architecture
+                  </span>
+                </div>
+                <p className="modal-description mb-0">{description}</p>
+              </div>
+
+              <div className="modal-tech-stack cartoon-card-sub">
+                <div className="d-flex align-items-center gap-2 mb-3">
+                  <span className="cartoon-sub-badge cartoon-sub-badge-blue">
+                    <i className="fas fa-layer-group me-1"></i> Tech Stack &amp; Tools
+                  </span>
+                </div>
+                <ul className="list-inline mb-0 d-flex flex-wrap align-items-center">{techList}</ul>
+              </div>
+            </div>
+          </Modal.Body>
+        </div>
       </Modal>
     );
   }

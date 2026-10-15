@@ -1,63 +1,58 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef } from "react";
 
 const CustomCursor = () => {
-  const [position, setPosition] = useState({ x: -100, y: -100 });
-  const [trailingPos, setTrailingPos] = useState({ x: -100, y: -100 });
-  const [isHovered, setIsHovered] = useState(false);
-  const [isClicked, setIsClicked] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
+  const dotRef = useRef(null);
+  const ringRef = useRef(null);
 
   useEffect(() => {
     // Only enable on desktop with fine mouse pointer
     if (window.matchMedia("(pointer: coarse)").matches) return;
 
-    const handleMouseMove = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
-      if (!isVisible) setIsVisible(true);
-    };
-
-    const handleMouseDown = () => setIsClicked(true);
-    const handleMouseUp = () => setIsClicked(false);
-    const handleMouseLeave = () => setIsVisible(false);
-    const handleMouseEnter = () => setIsVisible(true);
-
-    window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("mousedown", handleMouseDown);
-    window.addEventListener("mouseup", handleMouseUp);
-    document.addEventListener("mouseleave", handleMouseLeave);
-    document.addEventListener("mouseenter", handleMouseEnter);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("mousedown", handleMouseDown);
-      window.removeEventListener("mouseup", handleMouseUp);
-      document.removeEventListener("mouseleave", handleMouseLeave);
-      document.removeEventListener("mouseenter", handleMouseEnter);
-    };
-  }, [isVisible]);
-
-  // Smooth trailing ring loop
-  useEffect(() => {
+    let mouseX = -100;
+    let mouseY = -100;
+    let ringX = -100;
+    let ringY = -100;
+    let isVisible = false;
     let animationFrameId;
-    const updateTrailing = () => {
-      setTrailingPos((prev) => {
-        const dx = position.x - prev.x;
-        const dy = position.y - prev.y;
-        return {
-          x: prev.x + dx * 0.25,
-          y: prev.y + dy * 0.25,
-        };
-      });
-      animationFrameId = requestAnimationFrame(updateTrailing);
+
+    const handleMouseMove = (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+
+      if (!isVisible) {
+        isVisible = true;
+        if (dotRef.current) dotRef.current.style.opacity = "1";
+        if (ringRef.current) ringRef.current.style.opacity = "1";
+      }
+
+      if (dotRef.current) {
+        dotRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+      }
     };
 
-    animationFrameId = requestAnimationFrame(updateTrailing);
-    return () => cancelAnimationFrame(animationFrameId);
-  }, [position]);
+    const handleMouseDown = () => {
+      if (ringRef.current) ringRef.current.classList.add("cursor-clicked");
+      if (dotRef.current) dotRef.current.classList.add("cursor-clicked");
+    };
 
-  // Detect hovering on clickable elements
-  useEffect(() => {
-    const handleOver = (e) => {
+    const handleMouseUp = () => {
+      if (ringRef.current) ringRef.current.classList.remove("cursor-clicked");
+      if (dotRef.current) dotRef.current.classList.remove("cursor-clicked");
+    };
+
+    const handleMouseLeave = () => {
+      isVisible = false;
+      if (dotRef.current) dotRef.current.style.opacity = "0";
+      if (ringRef.current) ringRef.current.style.opacity = "0";
+    };
+
+    const handleMouseEnter = () => {
+      isVisible = true;
+      if (dotRef.current) dotRef.current.style.opacity = "1";
+      if (ringRef.current) ringRef.current.style.opacity = "1";
+    };
+
+    const handleMouseOver = (e) => {
       const target = e.target;
       if (
         target.closest("a") ||
@@ -67,38 +62,55 @@ const CustomCursor = () => {
         target.closest(".social-btn") ||
         target.closest(".react-switch") ||
         target.closest('[role="button"]') ||
-        target.closest(".modal-close-btn")
+        target.closest(".modal-close-btn") ||
+        target.closest(".btn-cartoon") ||
+        target.closest(".tech-badge")
       ) {
-        setIsHovered(true);
+        if (ringRef.current) ringRef.current.classList.add("cursor-hovered");
+        if (dotRef.current) dotRef.current.classList.add("cursor-hovered");
       } else {
-        setIsHovered(false);
+        if (ringRef.current) ringRef.current.classList.remove("cursor-hovered");
+        if (dotRef.current) dotRef.current.classList.remove("cursor-hovered");
       }
     };
 
-    window.addEventListener("mouseover", handleOver);
-    return () => window.removeEventListener("mouseover", handleOver);
-  }, []);
+    // Ultra-smooth lerp loop for the trailing ring
+    const render = () => {
+      // Lerp ring towards mouse with smooth damping
+      ringX += (mouseX - ringX) * 0.22;
+      ringY += (mouseY - ringY) * 0.22;
 
-  if (!isVisible) return null;
+      if (ringRef.current) {
+        ringRef.current.style.transform = `translate3d(${ringX}px, ${ringY}px, 0)`;
+      }
+
+      animationFrameId = requestAnimationFrame(render);
+    };
+
+    window.addEventListener("mousemove", handleMouseMove, { passive: true });
+    window.addEventListener("mousedown", handleMouseDown);
+    window.addEventListener("mouseup", handleMouseUp);
+    window.addEventListener("mouseover", handleMouseOver);
+    document.addEventListener("mouseleave", handleMouseLeave);
+    document.addEventListener("mouseenter", handleMouseEnter);
+
+    animationFrameId = requestAnimationFrame(render);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("mousedown", handleMouseDown);
+      window.removeEventListener("mouseup", handleMouseUp);
+      window.removeEventListener("mouseover", handleMouseOver);
+      document.removeEventListener("mouseleave", handleMouseLeave);
+      document.removeEventListener("mouseenter", handleMouseEnter);
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, []);
 
   return (
     <>
-      <div
-        className={`custom-cursor-dot ${isHovered ? "cursor-hovered" : ""} ${
-          isClicked ? "cursor-clicked" : ""
-        }`}
-        style={{
-          transform: `translate3d(${position.x}px, ${position.y}px, 0)`,
-        }}
-      />
-      <div
-        className={`custom-cursor-ring ${isHovered ? "cursor-hovered" : ""} ${
-          isClicked ? "cursor-clicked" : ""
-        }`}
-        style={{
-          transform: `translate3d(${trailingPos.x}px, ${trailingPos.y}px, 0)`,
-        }}
-      />
+      <div ref={dotRef} className="custom-cursor-dot" />
+      <div ref={ringRef} className="custom-cursor-ring" />
     </>
   );
 };

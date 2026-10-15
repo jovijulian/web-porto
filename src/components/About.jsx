@@ -11,16 +11,19 @@ class About extends Component {
     const socials = this.props.sharedBasicInfo?.social || [];
 
     return (
-      <section id="about" className="py-5">
+      <section id="about" className="py-5 cartoon-section">
         <div className="container">
           <div className="section-header text-center mb-5">
+            <div className="cartoon-tag-hero mb-2 d-inline-block">
+              <span> PROFILE &amp; BACKGROUND</span>
+            </div>
             <h2 className="section-title-clean">{sectionName}</h2>
             <div className="section-title-line"></div>
           </div>
 
           <div className="row align-items-stretch justify-content-center g-4">
             <div className="col-lg-4 col-md-5 text-center">
-              <div className="profile-card h-100 d-flex flex-column justify-content-between">
+              <div className="profile-card cartoon-card h-100 d-flex flex-column justify-content-between p-4">
                 <div>
                   <div className="profile-img-wrap mb-4">
                     <img
@@ -33,10 +36,10 @@ class About extends Component {
                       }}
                     />
                   </div>
-                  <h4 className="profile-name">Jovi Julian Hendri</h4>
-                  <p className="profile-role">Full Stack &amp; IoT Engineer</p>
+                  <h4 className="profile-name mb-1">Jovi Julian Hendri</h4>
+                  <div className="profile-role-badge mb-2">Full Stack &amp; IoT Engineer</div><br />
                   <p className="profile-location">
-                    <i className="fas fa-map-marker-alt me-2 text-primary"></i>
+                    <i className="fas fa-map-marker-alt me-2 text-danger"></i>
                     <span>Bandung, Indonesia</span>
                   </p>
                 </div>
@@ -48,7 +51,7 @@ class About extends Component {
                       href={item.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="social-btn mx-1"
+                      className="social-btn cartoon-social-btn mx-1"
                       aria-label={item.name}
                     >
                       <i className={item.class}></i>
@@ -59,11 +62,15 @@ class About extends Component {
             </div>
 
             <div className="col-lg-8 col-md-7">
-              <div className="about-content-card h-100 d-flex flex-column justify-content-between">
+              <div className="about-content-card cartoon-card h-100 d-flex flex-column justify-content-between">
                 <div>
                   <div className="about-card-header d-flex align-items-center justify-content-between px-4 py-3">
-                    <span className="about-header-tag">
-                      <i className="fas fa-terminal me-2 text-primary"></i>
+                    <span className="about-header-tag d-flex align-items-center">
+                      <span className="cartoon-window-dots me-3">
+                        <span className="dot dot-red"></span>
+                        <span className="dot dot-yellow"></span>
+                        <span className="dot dot-green"></span>
+                      </span>
                       <span>{hello}</span>
                     </span>
                   </div>
@@ -75,8 +82,8 @@ class About extends Component {
                 <div className="about-highlights px-4 pb-4 pt-2">
                   <div className="row g-3">
                     <div className="col-sm-6">
-                      <div className="highlight-item h-100">
-                        <span className="highlight-icon">
+                      <div className="highlight-item cartoon-highlight-card h-100">
+                        <span className="highlight-icon cartoon-icon-trophy">
                           <i className="fas fa-trophy"></i>
                         </span>
                         <div>
@@ -86,8 +93,8 @@ class About extends Component {
                       </div>
                     </div>
                     <div className="col-sm-6">
-                      <div className="highlight-item h-100">
-                        <span className="highlight-icon">
+                      <div className="highlight-item cartoon-highlight-card h-100">
+                        <span className="highlight-icon cartoon-icon-network">
                           <i className="fas fa-network-wired"></i>
                         </span>
                         <div>

@@ -28,93 +28,88 @@
   "skills": {
     "icons": [
       {
+        "name": "Node.js",
+        "class": "devicon-nodejs-plain colored",
+        "level": "90"
+      },
+      {
+        "name": "Express.js",
+        "class": "devicon-express-original colored",
+        "level": "90"
+      },
+      {
+        "name": "Golang",
+        "class": "devicon-go-plain colored",
+        "level": "85"
+      },
+      {
+        "name": "Fiber Golang",
+        "class": "devicon-go-plain colored",
+        "level": "85"
+      },
+      {
         "name": "Next.js",
         "class": "devicon-nextjs-original",
         "level": "90"
       },
       {
         "name": "React",
-        "class": "devicon-react-original",
+        "class": "devicon-react-original colored",
         "level": "90"
       },
       {
         "name": "Vue.js",
-        "class": "devicon-vuejs-plain",
+        "class": "devicon-vuejs-plain colored",
         "level": "85"
       },
       {
         "name": "Laravel",
-        "class": "devicon-laravel-plain",
+        "class": "devicon-laravel-plain colored",
         "level": "95"
       },
       {
-        "name": "Node.js",
-        "class": "devicon-nodejs-plain",
-        "level": "90"
-      },
-      {
-        "name": "Express.js",
-        "class": "devicon-express-original",
-        "level": "90"
-      },
-      {
-        "name": "Golang",
-        "class": "devicon-go-plain",
-        "level": "85"
-      },
-      {
-        "name": "Fiber Golang",
-        "class": "devicon-fiber-plain",
-        "level": "85"
-      },
-      {
         "name": "PHP",
-        "class": "devicon-php-plain",
+        "class": "devicon-php-plain colored",
         "level": "95"
       },
       {
         "name": "JavaScript",
-        "class": "devicon-javascript-plain",
+        "class": "devicon-javascript-plain colored",
         "level": "95"
       },
       {
         "name": "TypeScript",
-        "class": "devicon-typescript-plain",
+        "class": "devicon-typescript-plain colored",
         "level": "85"
       },
       {
         "name": "Apache Kafka",
-        "class": "devicon-apachekafka-original",
-        "level": "85"
-      },
-      {
-        "name": "WebSocket",
-        "class": "fas fa-exchange-alt",
+        "class": "devicon-apachekafka-original colored",
         "level": "85"
       },
       {
         "name": "PostgreSQL",
-        "class": "devicon-postgresql-plain",
+        "class": "devicon-postgresql-plain colored",
         "level": "90"
       },
       {
         "name": "MySQL",
-        "class": "devicon-mysql-plain",
+        "class": "devicon-mysql-plain colored",
         "level": "90"
       },
       {
         "name": "Redis",
-        "class": "devicon-redis-plain",
+        "class": "devicon-redis-plain colored",
         "level": "85"
       },
       {
         "name": "Docker",
-        "class": "devicon-docker-plain",
+        "class": "devicon-docker-plain colored",
         "level": "85"
       },
       {
         "name": "NGINX",
-        "class": "devicon-nginx-original",
+        "class": "devicon-nginx-original colored",
         "level": "85"
       },
       {
@@ -124,12 +119,17 @@
       },
       {
         "name": "Google Cloud",
-        "class": "devicon-googlecloud-plain",
+        "class": "devicon-googlecloud-plain colored",
         "level": "80"
       },
       {
+        "name": "WebSocket",
+        "class": "fas fa-exchange-alt",
+        "level": "85"
+      },
+      {
         "name": "Git",
-        "class": "devicon-git-plain",
+        "class": "devicon-git-plain colored",
         "level": "90"
       }
     ]

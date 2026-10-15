@@ -51,9 +51,12 @@ class Experience extends Component {
     });
 
     return (
-      <section id="resume" className="py-5">
+      <section id="resume" className="py-5 cartoon-section">
         <div className="container">
           <div className="section-header text-center mb-5">
+            <div className="cartoon-tag-hero mb-2 d-inline-block">
+              <span>CAREER JOURNEY</span>
+            </div>
             <h2 className="section-title-clean">{sectionName}</h2>
             <div className="section-title-line"></div>
           </div>

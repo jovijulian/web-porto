@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Hard Offset Cartoon Shadow -->
+  <rect x="52" y="52" width="416" height="416" rx="110" fill="#18181b" />
+
+  <!-- Main Cartoon Badge -->
+  <rect x="36" y="36" width="416" height="416" rx="110" fill="#2563eb" stroke="#18181b" stroke-width="26" />
+
+  <!-- Highlight Pill Accent (Top-Left) -->
+  <path d="M 96 82 Q 180 70 260 84" stroke="rgba(255,255,255,0.45)" stroke-width="16" stroke-linecap="round" fill="none" />
+
+  <!-- Jo Text: Inked Outline Behind -->
+  <text x="210" y="345" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-size="240" font-weight="900" text-anchor="middle" letter-spacing="-6" fill="#18181b" stroke="#18181b" stroke-width="36" stroke-linejoin="round">Jo</text>
+
+  <!-- Jo Text: Solid Pure White Front -->
+  <text x="210" y="345" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-size="240" font-weight="900" text-anchor="middle" letter-spacing="-6" fill="#FFFFFF">Jo</text>
+
+  <!-- Golden Comic Dot Shadow -->
+  <circle cx="380" cy="336" r="34" fill="#18181b" />
+  <!-- Golden Comic Dot -->
+  <circle cx="372" cy="328" r="34" fill="#FBBF24" stroke="#18181b" stroke-width="16" />
+
+  <!-- Comic Sparkle ✦ (Top Right) -->
+  <path d="M 390 100 Q 390 135 425 135 Q 390 135 390 170 Q 390 135 355 135 Q 390 135 390 100 Z" fill="#FFFFFF" stroke="#18181b" stroke-width="10" />
+</svg>
