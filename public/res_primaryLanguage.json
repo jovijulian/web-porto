@@ -1,7 +1,7 @@
 {
   "basic_info": {
     "description_header": "Systems Architecture & Engineering",
-    "description": "Full Stack Developer with 3+ years of hands-on experience architecting scalable web applications and real-time IoT-integrated systems across diverse sectors—including smart property, utility fintech, defense telematics, government digitalization, and enterprise SaaS. Graduated with a 3.91 GPA and awarded 1st Place Best Thesis from Institut Digital Ekonomi LPKIA Bandung for research on monolithic-to-microservice refactoring with Domain-Driven Design and load testing. Deeply proficient in TypeScript/JavaScript (Next.js, React, Node.js, Express) and PHP (Laravel), with production experience designing event-driven microservices with Apache Kafka, high-throughput REST APIs, CI/CD pipelines, and real-time IoT hardware telemetry.",
+    "description": "Full Stack & Systems Engineer with 3+ years of experience engineering high- throughput microservices, event- driven IoT architectures, and enterprise SaaS systems processing high volume transactional data Graduated with a 3.91/4.00 GPA and 1st Place Best Thesis Award from Institut Digital Ekonomi LPKIA. Proficient in Go, Node.js PHP, and TypeScript, with deep expertise in Fiber, Express.js, Next.js, React, Kafka, Docker, and PostgreSQL. Comfortable leading end- to- end development solo or driving technical direction within cross-functional teams.",
     "section_name": {
       "about": "About Me",
       "projects": "Featured Projects",
